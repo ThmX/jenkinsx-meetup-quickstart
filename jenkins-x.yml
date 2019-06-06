@@ -2,6 +2,8 @@ buildPack: scala
 pipelineConfig:
   pipelines:
     pullRequest:
-      build:
-        steps:
-        - command: echo "==== Something happened!!! ===="
+      postBuild:
+        preSteps:
+	- name: something-step
+          command: echo
+          args: ["==== Something happened!!! ===="]
