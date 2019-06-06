@@ -1,1 +1,7 @@
 buildPack: scala
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      build:
+        steps:
+        - command: echo "==== Something happened!!! ===="
