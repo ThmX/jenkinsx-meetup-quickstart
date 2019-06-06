@@ -4,6 +4,6 @@ pipelineConfig:
     pullRequest:
       postBuild:
         preSteps:
-	- name: something-step
+        - name: something-step
           command: echo
           args: ["==== Something happened!!! ===="]
